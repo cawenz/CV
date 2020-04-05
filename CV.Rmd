@@ -1,21 +1,18 @@
 ---
-name: Bryan
-surname: Jenks
-position: "Research Data Anaylst II"
-address: "California Correctional Health Care Services (CCHCS)"
-profilepic: "./img/roundSelfieIcon.jpg"
-www: bryanjenks.xyz
-email: "bryanjenks@protonmail.com"
-github: tallguyjenks
-linkedin: bryanjenks
-orcid: 0000-0002-9604-3069
+name: Chris
+surname: Wenz
+address: "52 River Road Sunderland, MA 01375"
+phone: 860-977-1674
+email: "cawenz@gmail.com"
+profilepic: "./img/bwwenz.png"
+github: cawenz
+linkedin: chris-a-wenz
+researchgate: chris_wenz
 date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: 990000
-aboutme: "I have been writing production software in a variety of languages for over 3+ years for California Correctional Health Care Services. I have a deep driven passion for software, automation, and data science. This very CV was even compiled with code."
-docname: CV
+docname: Cover Letter
 output: vitae::awesomecv
 ---
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE,
                       warning = FALSE,
@@ -25,57 +22,102 @@ library(tibble)
 library(magrittr)
 library(here)
 library(readr)
-
-source(file = here("r","data.r"))
-
+source(file = here("r","data2.r"))
 ```
-
-# Employment
-
-```{r EMPLOYMENT}
-
-work %>%
-  detailed_entries(
-    with = title,
-    what = unit,
-    why = detail,
-    when = glue::glue("{startMonth} {startYear} --> {endMonth} {endYear}",.na = ""),
-    where = where
-  )
-
-```
-
 # Education
-
-```{r EDUCATION}
-
-edu %>%
-  detailed_entries(
-    with = inst,
-    what = degree,
-    why = detail,
-    when = glue::glue("{startYear} --> {endYear}",.na = ""),
-    where = where
+**University of Connecticut** (UCONN)--- Storrs, CT
+```{r graduate}
+graduate %>%
+  brief_entries(
+    with = year,
+    what = school,
+    when = degree,
   )
-
+```
+**Hampshire College** --- Amherst, MA
+```{r undergraduate}
+undergraduate %>%
+  brief_entries(
+    with = year,
+    what = school,
+    when = degree,
+  )
 ```
 
-# Skills
-
-```{r SKILLS}
-
-skills %>%
+# Experience
+```{r Experience}
+experience %>%
   detailed_entries(
-    with = area,
-    what = skills
+    with = employer,
+    what = title,
+    why = why,
+    when = glue::glue("{startYear} --- {endYear}",.na = ""),
+    where = where,
   )
-
+```
+# Teaching
+## Graduate Courses
+```{r grad_teach}
+tribble(
+  ~Year, ~Name, ~Duty, ~School,
+  '2019 --- Present', "Reframing autism", "Designer and Instructor", "Landmark College",
+  '2018 --- Present',"Learning Differences and Neurodiversity", "Co-Instructor", "Landmark College",
+  '2015 --- 2018', "Reading in the Content Areas", "Designer and Instructor", "UCONN",
+  '2015 --- 2019', "Instruction for Students with Special Needs in the Mainstream","Instructor", "UConn"
+) %>% 
+  detailed_entries(
+    where = School,
+    with = Name, 
+    what = Duty,
+    when = Year
+  )
+```
+## Undergraduate Courses
+```{r UCONNunder}
+tribble(
+  ~Year, ~Name, ~Duty, ~School,
+  '2018 --- 2020', "Internship Experience", "Design and supervise internships in neuro-cognitive research, graphic design, and software development", "Landmark College",
+  '2017 --- 2018', "Teaching Reading in the Middle and High School", "Instructor", "UCONN",
+  '2016 --- 2018', "Teaching Reading and Writing in the Content Areas", "Instructor", "UCONN",
+  '2015', "History of Mathematics (Writing Intensive)", "Teaching Assistant and Co-Designer","UCONN",
+  '2013 --- 2015', "Social Thinking: Where’s the syllabus for that?", "Co-Designer and Instructor", "UCONN"
+) %>% 
+detailed_entries(
+    where = School,
+    with = Name, 
+    what = Duty,
+    when = Year
+  )
 ```
 
-\pagebreak
+# Publications
+## $\text{\underline{Articles in refereed journals}}$
+```{=latex}
+\setlength{\parindent}{-0.2in}
+\setlength{\leftskip}{0.2in}
+\setlength{\parskip}{8pt}
+Gabriel, R., \textbf{Wenz, C.} (2017). Three Directions for Disciplinary Literacy. \emph{Educational Leadership}, 74(5), Online Supplement to the February 2017 issue: https://lcirt.link/gabrielandwenz2017.
 
-# Honors
+Gabriel, R., \textbf{Wenz, C.}, \& Dostal, H. (2016). Disciplinary Text-Dependent Questions: Questioning for Learning in the Disciplines. The Challenge of Literacy in the Disciplines. \emph{The Clearing House: A Journal of Educational Strategies, Issues and Ideas,} 89(6), 202–207. https://doi.org/10.1080/00098655.2016.1209154
+```
+## Book Chapters
+```{=latex}
+\setlength{\parindent}{-0.2in}
+\setlength{\leftskip}{0.2in}
+\setlength{\parskip}{8pt}
+\textbf{Wenz, C.}, Kowitt, J. \& Friedlander, L. (2017). A Museum Based Program to Support Adolescents and Adults with ASD: Results of a Pilot Study and Suggestions for Implementation. In, \emph{Examining the Intersection of Arts and Special Education, Volume 3.} Kennedy Center for Performing Arts, Washington, DC.
+%\pagebreak
+```
+# Selected Presentations
+## Professional Development Workshops
 
+## At Local and National Conferences
+
+
+
+
+
+# Awards
 ```{r HONORS}
 
 honors %>%
@@ -133,3 +175,5 @@ certifications %>%
   )
 
 ```
+
+
