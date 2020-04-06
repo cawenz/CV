@@ -100,15 +100,6 @@ LCgrad <- tribble(
   "2020", "Reframing Autism", "Designer and Instructor", "Online"
 )
 
-# ```{r LCgrad}
-# LCgrad %>%
-#  detailed_entries(
-#    with = name,
-#   what = duty,
-#   when = mode,
-#    where = year
-#  )
-#```
 
 
 

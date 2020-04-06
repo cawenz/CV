@@ -8,9 +8,8 @@ profilepic: "./img/bwwenz.png"
 github: cawenz
 linkedin: chris-a-wenz
 researchgate: chris_wenz
-date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: 990000
-docname: Cover Letter
+docname: CV
 output: vitae::awesomecv
 ---
 ```{r setup, include=FALSE}
@@ -25,7 +24,7 @@ library(readr)
 source(file = here("r","data2.r"))
 ```
 # Education
-**University of Connecticut** (UCONN)--- Storrs, CT
+**University of Connecticut** (UConn)--- Storrs, CT
 ```{r graduate}
 graduate %>%
   brief_entries(
@@ -56,13 +55,13 @@ experience %>%
   )
 ```
 # Teaching
-## Graduate Courses
+## $\text{\underline{Graduate Courses}}$
 ```{r grad_teach}
 tribble(
   ~Year, ~Name, ~Duty, ~School,
   '2019 --- Present', "Reframing autism", "Designer and Instructor", "Landmark College",
   '2018 --- Present',"Learning Differences and Neurodiversity", "Co-Instructor", "Landmark College",
-  '2015 --- 2018', "Reading in the Content Areas", "Designer and Instructor", "UCONN",
+  '2015 --- 2018', "Reading in the Content Areas", "Designer and Instructor", "UConn",
   '2015 --- 2019', "Instruction for Students with Special Needs in the Mainstream","Instructor", "UConn"
 ) %>% 
   detailed_entries(
@@ -72,15 +71,14 @@ tribble(
     when = Year
   )
 ```
-## Undergraduate Courses
+## $\text{\underline{Undergraduate Courses}}$
 ```{r UCONNunder}
 tribble(
   ~Year, ~Name, ~Duty, ~School,
-  '2018 --- 2020', "Internship Experience", "Design and supervise internships in neuro-cognitive research, graphic design, and software development", "Landmark College",
-  '2017 --- 2018', "Teaching Reading in the Middle and High School", "Instructor", "UCONN",
-  '2016 --- 2018', "Teaching Reading and Writing in the Content Areas", "Instructor", "UCONN",
-  '2015', "History of Mathematics (Writing Intensive)", "Teaching Assistant and Co-Designer","UCONN",
-  '2013 --- 2015', "Social Thinking: Where’s the syllabus for that?", "Co-Designer and Instructor", "UCONN"
+  '2018 --- 2020', "Internship Experience", "Design and supervise internships in neuro-cognitive research", "Landmark College",
+  '2016 --- 2018', "Teaching Reading and Writing in the Content Areas", "Instructor", "UConn",
+  '2015', "History of Mathematics (Writing Intensive)", "Teaching Assistant and Co-Designer","UConn",
+  '2013 --- 2015', "Social Thinking: Where’s the syllabus for that?", "Co-Designer and Instructor", "UConn"
 ) %>% 
 detailed_entries(
     where = School,
@@ -100,7 +98,7 @@ Gabriel, R., \textbf{Wenz, C.} (2017). Three Directions for Disciplinary Literac
 
 Gabriel, R., \textbf{Wenz, C.}, \& Dostal, H. (2016). Disciplinary Text-Dependent Questions: Questioning for Learning in the Disciplines. The Challenge of Literacy in the Disciplines. \emph{The Clearing House: A Journal of Educational Strategies, Issues and Ideas,} 89(6), 202–207. https://doi.org/10.1080/00098655.2016.1209154
 ```
-## Book Chapters
+## $\text{\underline{Book Chapters}}$
 ```{=latex}
 \setlength{\parindent}{-0.2in}
 \setlength{\leftskip}{0.2in}
@@ -109,12 +107,35 @@ Gabriel, R., \textbf{Wenz, C.}, \& Dostal, H. (2016). Disciplinary Text-Dependen
 %\pagebreak
 ```
 # Selected Presentations
-## Professional Development Workshops
+## $\text{\underline{Professional Development Workshops}}$
+```{=latex}
+\setlength{\parindent}{-0.2in}
+\setlength{\leftskip}{0.2in}
+\setlength{\parskip}{8pt}
+```
 
-## At Local and National Conferences
+* Cambridge College
+* CUNY ECI
+* CUNY Start
+* SABES
+* Summer Institute
 
+## $\text{\underline{At Regional or National Conferences}}$
+```{=latex}
+\setlength{\parindent}{-0.2in}
+\setlength{\leftskip}{0.2in}
+\setlength{\parskip}{8pt}
+\textbf{Wenz, C.} \& Warrnader, K. (2018). The College Writing Motivation Scale: a tool for measuring motivation in Writing Center contexts. Paper presented at the Northeast Writing Center Association Conference, Worcester, MA.
 
+\textbf{Wenz, C.} (2017). Disciplinary literacy and journalism: literacy instruction in a post truth world. Paper presented at the Literacy Research Association Annual Conference, Tampa, FL.
 
+Kowitt, J., \textbf{Wenz, C.} \& Friedlander, L. (2017). Enhancing Observational Skills: Inclusive Museum Programming for Visitors with Autism Spectrum Disorder. Paper presented at the Tenth International Conference on the Inclusive Museum, Manchester, UK.
+
+Gabriel, R., \textbf{Wenz, C.} (2015) Opportunities to Develop Literacy Scale. Paper presented at the Literacy Research Association Annual Conference, Carlsbad, CA.
+
+\textbf{Wenz, C.}, \& Gabriel, R. (2015) An integrative review and pilot survey of disciplinary literacy instruction in secondary settings. Poster presented at the Annual Meeting of the American Educational Research Association, Chicago, IL
+```
+# Professional Service
 
 
 # Awards
@@ -131,49 +152,6 @@ honors %>%
 
 ```
 
-# Projects
 
-```{r PROJECTS}
-
-projects %>%
-  detailed_entries(
-    with = area,
-    what = accomplishment,
-    why = detail,
-    when = year,
-    where = where
-  )
-
-```
-
-# Works
-
-```{r WORKS}
-
-works %>%
-  detailed_entries(
-    with = area,
-    what = accomplishment,
-    why = detail,
-    when = year,
-    where = where
-  )
-
-```
-
-# Certifications
-
-```{r CERTIFICATIONS}
-
-certifications %>%
-  detailed_entries(
-    with = area,
-    what = accomplishment,
-    why = detail,
-    when = year,
-    where = where
-  )
-
-```
 
 
