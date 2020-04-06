@@ -1,7 +1,7 @@
 ---
-name: Chris
+name: Christopher
 surname: Wenz
-address: "52 River Road Sunderland, MA 01375"
+address: "52 River Road Apt. 24 · Sunderland, MA 01375"
 phone: 860-977-1674
 email: "cawenz@gmail.com"
 profilepic: "./img/bwwenz.png"
@@ -9,8 +9,9 @@ github: cawenz
 linkedin: chris-a-wenz
 researchgate: chris_wenz
 headcolor: 990000
-docname: CV
+docname: Short CV
 output: vitae::awesomecv
+aboutme: "I am an experienced educator committed to creating accessible and responsive educational environments that work for ***all*** students."
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE,
@@ -24,22 +25,13 @@ library(readr)
 source(file = here("r","data2.r"))
 ```
 # Education
-**University of Connecticut** (UConn)--- Storrs, CT
-```{r graduate}
-graduate %>%
-  brief_entries(
-    with = year,
-    what = school,
-    when = degree,
-  )
-```
-**Hampshire College** --- Amherst, MA
-```{r undergraduate}
-undergraduate %>%
-  brief_entries(
-    with = year,
-    what = school,
-    when = degree,
+```{r ed alt}
+educationDETAIL %>%
+  detailed_entries(
+    with = school, 
+    what = degree, 
+    when = Year,
+    where = city,
   )
 ```
 
@@ -54,6 +46,7 @@ experience %>%
     where = where,
   )
 ```
+
 # Teaching
 ## $\text{\underline{Graduate Courses}}$
 ```{r grad_teach}
@@ -106,52 +99,82 @@ Gabriel, R., \textbf{Wenz, C.}, \& Dostal, H. (2016). Disciplinary Text-Dependen
 \textbf{Wenz, C.}, Kowitt, J. \& Friedlander, L. (2017). A Museum Based Program to Support Adolescents and Adults with ASD: Results of a Pilot Study and Suggestions for Implementation. In, \emph{Examining the Intersection of Arts and Special Education, Volume 3.} Kennedy Center for Performing Arts, Washington, DC.
 %\pagebreak
 ```
+
 # Selected Presentations
-## $\text{\underline{Professional Development Workshops}}$
+## $\text{\underline{Invited Professional Development Workshops}}$
 ```{=latex}
 \setlength{\parindent}{-0.2in}
 \setlength{\leftskip}{0.2in}
 \setlength{\parskip}{8pt}
+\textbf{Universal Design and Backwards Design: tools for inclusive and engaging post-secondary instruction.} Full-day workshop for the faculty of Cambridge College, February 18, 2020, Boston, MA. 
+
+\textbf{Executive Function and Student Learning: supporting adolescent development across contexts.} Half-day workshop for the Faculty and Staff of Wilbraham \& Monson Academy, Jan 19, 2020, Wilbraham, MA. 
+
+\textbf{Supporting Social Emotional Learning}. 3-day Workshop at Landmark College's Summer Institute for Educators, June 24-26, 2019, Putney, VT.  
+
+\textbf{Assessment as Instruction: promoting college success for neurodivergent learners.} Full-day workshop for City University of New York's Early College Initiative, May 19, 2019, New York, NY. 
+
+\textbf{Disabilities, Difficulties and Differences: ESOL instruction for diverse learners}. Full-day presentation for the Massachusetts Adult Education Professional Development System, March 29, 2019, Worcester, MA. 
+
 ```
 
-* Cambridge College
-* CUNY ECI
-* CUNY Start
-* SABES
-* Summer Institute
-
-## $\text{\underline{At Regional or National Conferences}}$
+## $\text{\underline{National and Regional Conferences}}$
 ```{=latex}
 \setlength{\parindent}{-0.2in}
 \setlength{\leftskip}{0.2in}
 \setlength{\parskip}{8pt}
-\textbf{Wenz, C.} \& Warrnader, K. (2018). The College Writing Motivation Scale: a tool for measuring motivation in Writing Center contexts. Paper presented at the Northeast Writing Center Association Conference, Worcester, MA.
+\textbf{Wenz, C.} \& Warrnader, K. (2018). \emph{The College Writing Motivation Scale: a tool for measuring motivation in Writing Center contexts.} Paper presented at the Northeast Writing Center Association Conference, Worcester, MA.
 
-\textbf{Wenz, C.} (2017). Disciplinary literacy and journalism: literacy instruction in a post truth world. Paper presented at the Literacy Research Association Annual Conference, Tampa, FL.
+\textbf{Wenz, C.} (2017). \emph{Disciplinary literacy and journalism: literacy instruction in a post-truth world.} Paper presented at the Literacy Research Association Annual Conference, Tampa, FL.
 
-Kowitt, J., \textbf{Wenz, C.} \& Friedlander, L. (2017). Enhancing Observational Skills: Inclusive Museum Programming for Visitors with Autism Spectrum Disorder. Paper presented at the Tenth International Conference on the Inclusive Museum, Manchester, UK.
+Kowitt, J., \textbf{Wenz, C.} \& Friedlander, L. (2017). \emph{Enhancing Observational Skills: inclusive museum programming for visitors with Autism.} Paper presented at the Tenth International Conference on the Inclusive Museum, Manchester, UK.
 
-Gabriel, R., \textbf{Wenz, C.} (2015) Opportunities to Develop Literacy Scale. Paper presented at the Literacy Research Association Annual Conference, Carlsbad, CA.
+Gabriel, R., \textbf{Wenz, C.} (2015). \emph{The Opportunities to Develop Literacy Scale.} Paper presented at the Literacy Research Association Annual Conference, Carlsbad, CA.
 
-\textbf{Wenz, C.}, \& Gabriel, R. (2015) An integrative review and pilot survey of disciplinary literacy instruction in secondary settings. Poster presented at the Annual Meeting of the American Educational Research Association, Chicago, IL
+\textbf{Wenz, C.}, \& Gabriel, R. (2015). \emph{An integrative review and pilot survey of disciplinary literacy instruction in secondary settings.} Poster presented at the Annual Meeting of the American Educational Research Association, Chicago, IL
 ```
-# Professional Service
-
 
 # Awards
-```{r HONORS}
-
-honors %>%
-  detailed_entries(
-    with = area,
-    what = accomplishment,
-    why = detail,
-    when = year,
-    where = where
-  )
-
+```{=latex}
+\begin{cvhonors}
+  \cvhonor
+    {Jeanne S. Chall Graduate Fellowship}
+    {,  International Literacy Association}
+    {Newark, DE}
+    {2017}
+  \cvhonor
+    {Wirth-Santoro Award}
+    {,  Connecticut Association for Reading Research}
+    {Simsbury, CT}
+    {2016}
+  \cvhonor
+    {Graduate Student Scholarship}
+    {,  American Reading Forum}
+    {Miami, FL}
+    {2016}
+  \cvhonor
+    {Assessment Award}
+    {,  Neag School of Education}
+    {Storrs, CT}
+    {2013}
+    
+\end{cvhonors}
 ```
 
-
-
-
+# Professional Affiliations
+```{=latex}
+\begin{minipage}[t]{.5\linewidth}
+  \begin{cvitems}
+    \item College Reading and Learning Association
+    \item Council for Exceptional Children
+    \item International Literacy Association
+  \end{cvitems}
+\end{minipage}
+\begin{minipage}[t]{.5\linewidth}
+  \begin{cvitems}
+    \item Literacy Research Association
+    \item American Educational Research Association
+    \item International Mind, Brain and Education Society
+  \end{cvitems}
+\end{minipage}
+```
