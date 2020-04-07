@@ -8,7 +8,7 @@ profilepic: "./img/bwwenz.png"
 github: cawenz
 linkedin: chris-a-wenz
 researchgate: chris_wenz
-headcolor: 990000
+headcolor: 5b9279
 docname: Short CV
 output: vitae::awesomecv
 aboutme: "I am an experienced educator committed to creating accessible and responsive educational environments that work for ***all*** students."
