@@ -3,23 +3,23 @@ library(tibble)
 experience <- tribble(~title, ~employer, ~startYear,~endYear, ~where, ~why,
     # LCIRT    
     "Research Scientist", "Landmark College Institute for Research and Training (LCIRT)", 
-    2018, "Present", "Putney, VT", 
+    2018, 2020, "Putney, VT", 
         # First Bullet
         "Design and deliver professional development for K-12 and post-secondary educators through workshops, online graduate courses, and Landmark's annual Summer Institute for Educators.",
     #
     "Research Scientist", "Landmark College Institute for Research and Training (LCIRT)", 
-    2018, "Present", "Putney, VT", 
+    2018, 2020, "Putney, VT", 
         # Second Bullet
         "Recruit, train and mentor Landmark Students for internships in our neuro-cognitive lab.",
     #
     "Research Scientist", "Landmark College Institute for Research and Training (LCIRT)", 
-    2018, "Present", "Putney, VT", 
+    2018, 2020, "Putney, VT", 
         # Third Bullet
         "Conduct original research that expands our understanding of neurodiversity and pedagogical practices that meet the specific needs of neurodivergent learners.", 
     #
     "Research Scientist", "Landmark College Institute for Research and Training (LCIRT)", 
-    2018, "Present", "Putney, VT", 
-    # Third Bullet
+    2018, 2020, "Putney, VT", 
+    # Fourth Bullet
     "Serve the College as member of the Center for Neurodiversity Steering Committee and Pedagogy Committee.", 
     
 
@@ -80,18 +80,19 @@ sciences.",
     "Residential Dean and Humanities Instructor", "Franklin Academy", 
     2007, 2012, "East Haddam, CT", 
     # Third Bullet
-    "Designed and taught courses in History, English, songwriting, and community service.",
+    "Designed and taught courses in History, English, songwriting, and social justice.",
 )
+    
 #### EDUCATION SECTION #####
 
 education <- tribble(~school, ~degree, ~year, ~where,
-    "University of Connecticut", "PhD, Curriculum & Instruction", "August 2020", "Storrs, CT", 
+    "University of Connecticut", "PhD, Curriculum & Instruction", "May 2021", "Storrs, CT", 
     "University of Connecticut", "MA, Educational Psychology", "2014", "Storrs, CT",
     "Hampshire College", "BA, History & Cognitive Science", "2007", "Amherst, MA"
     ) 
   
 graduate <- tribble(~school, ~degree, ~year, ~where,
-                     "Curriculum & Instruction", "PhD", "May, 2020", "Storrs, CT", 
+                     "Curriculum & Instruction", "PhD", "May, 2021", "Storrs, CT", 
                      "Educational Psychology", "MA", "2014", "Storrs, CT"
 ) 
 undergraduate <- tribble(~school, ~degree, ~year, ~where,
@@ -103,7 +104,7 @@ undergraduate <- tribble(~school, ~degree, ~year, ~where,
 #### Detailed Education? ####
 library(tibble)
 educationDETAIL <- tribble(~school, ~city, ~degree, ~Year, 
-                      "University of Connecticut", "Storrs, CT", "PhD --- Curriculum and Instruction", "August 2020",
+                      "University of Connecticut", "Storrs, CT", "PhD --- Curriculum and Instruction", "May 2021",
                       "University of Connecticut", "Storrs, CT", "MA --- Educational Psychology", "2014",
                       "Hampshire College", "Amherst, MA", "BA -- History and Cognitive Science", "2007",
                       )

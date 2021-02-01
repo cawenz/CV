@@ -1,7 +1,7 @@
 ---
 name: Christopher
 surname: Wenz
-address: "456B Long Plain Road · Leverett, MA 01054"
+address: "456 Long Plain Road · Leverett, MA 01054"
 phone: 860-977-1674
 email: "cawenz@gmail.com"
 profilepic: "./img/bwwenz.png"
@@ -11,7 +11,7 @@ researchgate: chris_wenz
 headcolor: 5b9279
 docname: Short CV
 output: vitae::awesomecv
-aboutme: "I am an experienced educator committed to creating accessible and responsive educational environments that work for ***all*** students."
+#aboutme: "An experienced educator committed to creating accessible and responsive educational environments that work for ***all*** students."
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE,
@@ -49,10 +49,11 @@ experience %>%
 
 # Teaching
 ## $\text{\underline{Graduate Courses}}$
+Note: ** indicates online courses
 ```{r grad_teach}
 tribble(
   ~Year, ~Name, ~Duty, ~School,
-  '2019 --- Present', "Reframing autism", "Designer and Instructor", "Landmark College",
+  '2019 --- Present', "Reframing autism**", "Designer and Instructor", "Landmark College",
   '2018 --- Present',"Learning Differences and Neurodiversity", "Co-Instructor", "Landmark College",
   '2015 --- 2018', "Reading in the Content Areas", "Designer and Instructor", "UConn",
   '2015 --- 2019', "Instruction for Students with Special Needs in the Mainstream","Instructor", "UConn"
@@ -64,6 +65,7 @@ tribble(
     when = Year
   )
 ```
+
 ## $\text{\underline{Undergraduate Courses}}$
 ```{r UCONNunder}
 tribble(
