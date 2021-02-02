@@ -53,9 +53,9 @@ Note: ** indicates online courses
 ```{r grad_teach}
 tribble(
   ~Year, ~Name, ~Duty, ~School,
-  '2019 --- Present', "Reframing autism**", "Designer and Instructor", "Landmark College",
-  '2018 --- Present',"Learning Differences and Neurodiversity", "Co-Instructor", "Landmark College",
-  '2015 --- 2018', "Reading in the Content Areas", "Designer and Instructor", "UConn",
+  '2019 --- 2020', "Reframing autism**", "Designer and Instructor", "Landmark College",
+  '2018 --- 2020',"Learning Differences and Neurodiversity**", "Co-Instructor", "Landmark College",
+  '2015 --- 2018', "Reading in the Content Areas**", "Designer and Instructor", "UConn",
   '2015 --- 2019', "Instruction for Students with Special Needs in the Mainstream","Instructor", "UConn"
 ) %>% 
   detailed_entries(
@@ -70,8 +70,8 @@ tribble(
 ```{r UCONNunder}
 tribble(
   ~Year, ~Name, ~Duty, ~School,
+  '2016 --- 2021', "Teaching Reading and Writing in the Content Areas", "Instructor", "UConn",
   '2018 --- 2020', "Internship Experience", "Design and supervise internships in neuro-cognitive research", "Landmark College",
-  '2016 --- 2018', "Teaching Reading and Writing in the Content Areas", "Instructor", "UConn",
   '2015', "History of Mathematics (Writing Intensive)", "Teaching Assistant and Co-Designer","UConn",
   '2013 --- 2015', "Social Thinking: Where’s the syllabus for that?", "Co-Designer and Instructor", "UConn"
 ) %>% 
