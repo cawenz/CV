@@ -1,0 +1,134 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+ \definecolor{awesome}{HTML}{5b9279}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+%\photo[circle,edge,left]{./img/bwwenz.png}
+\name{Christopher}{Wenz}
+%\position{Software Architect{\enskip\cdotp\enskip}Security Expert}
+\address{456 Long Plain Road ~·~ Leverett, MA 01054}
+\mobile{860 977 1674}
+\email{cawenz@gmail.com}
+%\homepage{www.posquit0.com}
+%\github{cawenz}
+\linkedin{chris-a-wenz}
+\researchgate{chris\_wenz}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+
+%\quote{``Be the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+%\recipient
+ % {CAST}
+  %{200 Harvard Mill Square\\Wakefield, MA 01880}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Work Product 2: Slides Describing Research Aims }
+% How the letter is opened
+%\letteropening{\\\\Dear CAST Staff,}
+% How the letter is closed
+%\letterclosing{Sincerely,}
+% Any enclosures with the letter
+%\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Chris Wenz~~~·~~~Work Product 2}
+  {Page 1 of 11}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+Over the past two years, I have been working (alongside Dr. Rachael Gabriel) with data from the Reading Recovery Council of North America. In 2019, I created these slides to summarize for the Council the aims of a grant proposal we were working on. (We have since submitted this proposal to the NIH). This was a part of the process of gaining approval to use the data in our research. 
+
+The plots shown in the slides were created in R and show results of a preliminary analysis I conducted to support our grant proposal. I have included my notes from the presentation alongside the slides. 
+
+\\\\
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+%\makeletterclosing
+
+%\includegraphics[width=4cm, height=0.8cm]{./img/sig.png}
+\end{document}

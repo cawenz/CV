@@ -4,7 +4,7 @@ surname: Wenz
 address: "456 Long Plain Road · Leverett, MA 01054"
 phone: 860-977-1674
 email: "cawenz@gmail.com"
-profilepic: "./img/bwwenz.png"
+#profilepic: "./img/bwwenz.png"
 #github: cawenz
 linkedin: chris-a-wenz
 researchgate: chris_wenz
@@ -35,7 +35,7 @@ educationDETAIL %>%
   )
 ```
 
-# Experience
+# Recent Experience
 ```{r Experience}
 experience %>%
   detailed_entries(
@@ -53,6 +53,7 @@ Note: ** indicates online courses
 ```{r grad_teach}
 tribble(
   ~Year, ~Name, ~Duty, ~School,
+  '2020', "Universally Designed Literacy Instruction**", "Designer and Instructor", "Landmark College",
   '2019 --- 2020', "Reframing autism**", "Designer and Instructor", "Landmark College",
   '2018 --- 2020',"Learning Differences and Neurodiversity**", "Co-Instructor", "Landmark College",
   '2015 --- 2018', "Reading in the Content Areas**", "Designer and Instructor", "UConn",
@@ -131,6 +132,18 @@ Gabriel, R., \textbf{Wenz, C.}, \& Dostal, H. (2016). Disciplinary Text-Dependen
 
 Kowitt, J., \textbf{Wenz, C.} \& Friedlander, L. (2017). \emph{Enhancing Observational Skills: inclusive museum programming for visitors with Autism.} Paper presented at the Tenth International Conference on the Inclusive Museum, Manchester, UK.
 
+\textbf{Wenz, C.} (2016). \emph{Literacy Practices to Support DL Instruction Across the Disciplines.} Paper presented at the American Reading Forum Conference, Sanibel Island, FL. 
+
+Gabriel, R. and \textbf{Wenz, C.} (2016). \emph{A week-in-the-life of adolescent readers: Text types and tasks across the disciplines.} Paper presented at the Literacy Research Association Annual Conference, Nashville, TN.
+
+Gabriel, R. and \textbf{Wenz, C.} (2016). \emph{Complexity and Variety: A Study of Texts in Use Within High School Content Area Courses.} Paper presented at the American Reading Forum Conference, Sanibel Island, FL. 
+
+Gabriel, R. and \textbf{Wenz, C.} (2016). \emph{Understanding the Role of Texts in the Development of Disciplinary Literacy.} Paper presented at the American Reading Forum Conference, Sanibel Island, FL. 
+
+Gabriel, R., Dostal, H., and \textbf{Wenz, C.} (2016). \emph {Questions to Promote Disciplinary Literacy in Middle and High School.} Research presented at the Association of Literacy Educators and Researchers, Myrtle Beach, SC.
+
+Gabriel, R. and textbf{Wenz, C.} (2016). \emph{The challenge of adolescent literacy: text types and tasks of secondary content areas.} Research presented at the Association of Literacy Educators and Researchers, Myrtle Beach, SC. 
+
 Gabriel, R., \textbf{Wenz, C.} (2015). \emph{The Opportunities to Develop Literacy Scale.} Paper presented at the Literacy Research Association Annual Conference, Carlsbad, CA.
 
 \textbf{Wenz, C.}, \& Gabriel, R. (2015). \emph{An integrative review and pilot survey of disciplinary literacy instruction in secondary settings.} Poster presented at the Annual Meeting of the American Educational Research Association, Chicago, IL
@@ -162,6 +175,14 @@ Gabriel, R., \textbf{Wenz, C.} (2015). \emph{The Opportunities to Develop Litera
     
 \end{cvhonors}
 ```
+# Technical Skills
+``` {r skills} 
+skillsDetail %>%
+  detailed_entries(
+    with = area,
+    what = skills
+  )
+```
 
 # Professional Affiliations
 ```{=latex}
@@ -179,4 +200,33 @@ Gabriel, R., \textbf{Wenz, C.} (2015). \emph{The Opportunities to Develop Litera
     \item International Mind, Brain and Education Society
   \end{cvitems}
 \end{minipage}
+```
+
+# References
+```{=latex}
+\textbf{Rachael Gabriel} \\
+\textsc{Associate Professor of Literacy Education} \\ 
+University of Connecticut \\
+\underline{Phone}: (617) 721-0995 \\
+\underline{Email}: rachael.gabriel@uconn.edu \\[1mm]
+Dr. Gabriel was my doctoral advisor and I served as her research assistant for four years.
+\\
+```
+```{=latex}
+\textbf{Thomas Deans, PhD} \\
+\textsc{Professor of English and Director of University Writing Center} \\ 
+University of Connecticut \\
+\underline{Phone}: (860) 486-9728 \\
+\underline{Email}: tom.deans@uconn.edu \\[1mm]
+Dr. Deans was the Director of the University Writing Center when I worked there as a Graduate Writing Tutor.
+\\
+```
+```{=latex}
+\textbf{Tom Hays, PhD} \\
+\textsc{Assistant Head of School} \\ 
+Franklin Academy \\
+\underline{Phone}: (860) 873-2700 \\
+\underline{Email}: tom@fa-ct.org \\[1mm]
+Dr. Hays was the Educational Director at Franklin Academy when I served as Humanities Instructor and Residential Dean.
+\\
 ```
