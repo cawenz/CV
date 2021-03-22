@@ -176,12 +176,27 @@ Gabriel, R., \textbf{Wenz, C.} (2015). \emph{The Opportunities to Develop Litera
 \end{cvhonors}
 ```
 # Technical Skills
-``` {r skills} 
-skillsDetail %>%
-  detailed_entries(
-    with = area,
-    what = skills
-  )
+<!-- # ``` {r skills} -->
+<!-- # skillsDetail %>% -->
+<!-- #   detailed_entries( -->
+<!-- #     with = area, -->
+<!-- #     what = skills -->
+<!-- #   ) -->
+<!-- # ```  -->
+
+```{=latex}
+\begin{minipage}[t]{.5\linewidth}
+\textsc{\textbf{Data Analysis}} \\[0.5mm]
+R, SPSS, SPSS Amos, Mplus, Atlas.ti, NVivo \\[1mm]
+\textsc{\textbf{Learning Management Systems}}\\[0.5mm]
+Canvas, Blackboard, Storyline, Moodle\\[1mm]
+\end{minipage}
+\begin{minipage}[t]{.5\linewidth}
+\textsc{\textbf{Markup Languages}} \\[0.5mm]
+HTML, LaTeX, Markdown, RMarkdown, CSS \\[1mm]
+\textsc{\textbf{Adobe Creative Cloud}} \\[0.5mm]
+Photoshop, InDesign, Illustrator, Lightroom \\[1mm]
+\end{minipage}
 ```
 
 # Professional Affiliations
@@ -201,32 +216,26 @@ skillsDetail %>%
   \end{cvitems}
 \end{minipage}
 ```
-
+\newpage
 # References
 ```{=latex}
 \textbf{Rachael Gabriel} \\
 \textsc{Associate Professor of Literacy Education} \\ 
 University of Connecticut \\
-\underline{Phone}: (617) 721-0995 \\
-\underline{Email}: rachael.gabriel@uconn.edu \\[1mm]
-Dr. Gabriel was my doctoral advisor and I served as her research assistant for four years.
-\\
+(617) 721-0995 \\
+rachael.gabriel@uconn.edu \\[1mm]
 ```
 ```{=latex}
 \textbf{Thomas Deans, PhD} \\
 \textsc{Professor of English and Director of University Writing Center} \\ 
 University of Connecticut \\
-\underline{Phone}: (860) 486-9728 \\
-\underline{Email}: tom.deans@uconn.edu \\[1mm]
-Dr. Deans was the Director of the University Writing Center when I worked there as a Graduate Writing Tutor.
-\\
+(860) 486-9728 \\
+tom.deans@uconn.edu \\[1mm]
 ```
 ```{=latex}
 \textbf{Tom Hays, PhD} \\
 \textsc{Assistant Head of School} \\ 
 Franklin Academy \\
-\underline{Phone}: (860) 873-2700 \\
-\underline{Email}: tom@fa-ct.org \\[1mm]
-Dr. Hays was the Educational Director at Franklin Academy when I served as Humanities Instructor and Residential Dean.
-\\
+(860) 873-2700 \\
+tom@fa-ct.org \\[1mm]
 ```
