@@ -10,12 +10,12 @@ experience <- tribble(~title, ~employer, ~startYear,~endYear, ~where, ~why,
     "Research Scientist", "Landmark College Institute for Research and Training (LCIRT)", 
     2018, 2020, "Putney, VT", 
         # First Bullet
-        "Provide professional development for K-12 and post-secondary educators through workshops, online graduate courses, and Landmark’s annual Summer Institute for Educators.",
+        "Provided professional development for K-12 and post-secondary educators through workshops, online graduate courses, and Landmark’s annual Summer Institute for Educators.",
     
     "Research Scientist", "Landmark College Institute for Research and Training (LCIRT)", 
     2018, 2020, "Putney, VT", 
          #Second Bullet
-        "Recruit, train and mentor Landmark Students for internships in Landmark's neuro-cognitive lab.",
+        "Recruited, trained and mentored Landmark Students for internships in Landmark's neuro-cognitive lab.",
 
     "Research Scientist", "Landmark College Institute for Research and Training (LCIRT)", 
     2018, 2020, "Putney, VT", 
@@ -86,6 +86,13 @@ sciences.",
     2007, 2012, "East Haddam, CT", 
     # Third Bullet
     "Designed and taught courses in English, History, songwriting, and social justice.",
+    # CYB
+    "Corps Member", "City Year Boston", 2004, 2005, "Boston, MA",
+    #First Bullet
+    "Assisted master teacher in delivering civics curriculum to 8th grade students in the Boston Public Schools.",
+    #Second Bullet
+    "Corps Member", "City Year Boston", 2004, 2005, "Boston, MA",
+    "Engaged middle school students in service-learning projects for Young Heroes program.", 
 )
     
 #### EDUCATION SECTION #####
