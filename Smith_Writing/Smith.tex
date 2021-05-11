@@ -1,0 +1,137 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+ \definecolor{awesome}{HTML}{5b9279}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+%\photo[circle,edge,left]{./img/bwwenz.png}
+\name{Christopher}{Wenz}
+%\position{Software Architect{\enskip\cdotp\enskip}Security Expert}
+\address{456 Long Plain Road ~·~ Leverett, MA 01054}
+\mobile{860 977 1674}
+\email{cawenz@gmail.com}
+%\homepage{www.posquit0.com}
+%\github{cawenz}
+\linkedin{chris-a-wenz}
+\researchgate{chris\_wenz}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+
+%\quote{``Be the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+ {Dr. Julio Alves}
+ {10 Elm Street\\Northampton, MA 01063}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Candidate for Writing Instructor and Writing Studies Specialist}
+% How the letter is opened
+\letteropening{\\\\Dear Dr. Alves and members of the hiring committee,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+%\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Chris Wenz~~~·~~~Cover Letter}
+  {Page 1 of 1}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+In August, I will complete my PhD in Curriculum and Instruction; much of my scholarly work and college teaching has been focused on literacy instruction across the disciplines. In courses I've designed at the graduate and undergraduate level, I have helped K-12 and college instructors design "authentic" writing tasks that align with the purposes, formats and audiences of academic disciplines. In my own K-12 teaching, I have provided  students with opportunities to write for real audiences in a variety of formats; for example, I am currently revising a manuscript submitted to \emph{The History Teacher} which centers on my experience teaching high school students to create or edit wikipedia articles about local public art (as a means for learning local history as well as historical thinking and communication). I would love the opportunity to apply my knowledge and experience teaching writing (and writing pedagogy) to the Jacobsen Center's efforts to support instruction across the college. 
+
+In addition to my expertise in literacy pedagogy, I have extensive experience working with neurodivergent students in both K-12 and college settings. As a Graduate Writing Tutor at UConn, I emphasized my own learning challenges and my experience teaching students with learning differences in my public bio published on the Writing Center's website. As a result, it was common for students with learning differences and, in particular, writing anxiety to book their appointments with me. Often, my work with these students deviated from the typical structure of a tutoring session: the typical was not going to work for them. These experiences and my years as a Special Educator have made clear to me that there is no one method or pedagogical approach that can account for the diversity of learners that exist in every setting; instead, good instruction requires compassion, understanding and a willingnes to respond to the range of needs that define every group of learners. In addition to providing quality support to Smith students (regardless of their learning needs) I believe I could help Smith faculty support the writing development of \emph{all} students. 
+
+I believe that my experience as a researcher, writing tutor, educator and teacher educator would make me an asset to Smith students, faculty and the Jacobsen Center. I would greatly appreciate the opportunity to discuss my qualifications with you in an interview; thank you for your consideration. 
+
+\\\\
+Best,
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+%\makeletterclosing
+
+\includegraphics[width=4cm, height=0.8cm]{./img/sig.png}
+\end{document}

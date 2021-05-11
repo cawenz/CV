@@ -1,0 +1,133 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+ \definecolor{awesome}{HTML}{5b9279}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+%\photo[circle,edge,left]{./img/bwwenz.png}
+\name{Christopher}{Wenz}
+%\position{Software Architect{\enskip\cdotp\enskip}Security Expert}
+\address{456 Long Plain Road ~·~ Leverett, MA 01054}
+\mobile{860 977 1674}
+\email{cawenz@gmail.com}
+%\homepage{www.posquit0.com}
+%\github{cawenz}
+\linkedin{chris-a-wenz}
+\researchgate{chris\_wenz}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+
+%\quote{``Be the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+ {Kate Lytton, MS}
+ {97 Hawley Street\\Northampton, MA 01060}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Candidate for Program Evaluation Specialist/Associate}
+% How the letter is opened
+\letteropening{\\\\Dear Ms. Lytton,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+%\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Chris Wenz~~~·~~~Cover Letter}
+  {Page \thepage\ of 1}
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+I am incredibly excited by the opportunity to work at CES and join the Research and Evaluation Department. I should note that I am applying for both the Program Evaluation Associate and Program Evaluation Specialist roles; given that I am early in my career as a researcher, I am perhaps better suited to the Program Associate position. Regardless, I would be thrilled to learn from and work with you and your team in any capacity.
+
+Since leaving my position as Research Scientist at Landmark College in June, I have been teaching as an Adjunct Professor at the University of Connecticut and working to complete my PhD in Curriculum and Instruction. I have also been providing full-time care for my 5 year-old son and volunteering in support of a much-needed renovation of his non-profit preschool: Willow Blossom Learning Center. In my role as Board President, I have collaborated with the Center Director and staff to upgrade the building's HVAC systems, re-design classrooms, and secure the funding needed for these renovations. I have also volunteered hundreds of hours to complete the carpentry and painting necessary to create a safer and more functional space for the Program. This work has been particularly important to me because, throughout it's history, Willow Blossom has been committed to diversity and providing care to low-income families via the state's childcare financial assistance program. I hope that the work we have done this year will ensure that there is quality, affordable childcare available in Franklin County and Willow Blossom can continue to serve a diverse group of children and families. Now that Willow Blossom has re-opened, I am currently looking for a position that allows my family to stay in the Valley long-term and affords me the opportunity to apply my skills as a researcher. 
+
+I believe that my contributions to the "Willow Blossom Family" are indicative of my strengths as a teammate and my commitment to service, equity and justice; as an educator, these are the qualities that have helped me to connect with and build trust with students, families, colleagues and stakeholders in a diverse set of communities and programs. Beyond my skills as a researcher, I believe these are the qualities that would allow me to succeed at CES and it would be an honor to join a team of researchers that embeds social justice and equity into their work. I would greatly appreciate the opportunity to discuss my qualifications with you in an interview and I thank you for your consideration. 
+\\\\
+Best,
+\end{cvletter}
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+%\makeletterclosing
+
+\includegraphics[width=4cm, height=0.8cm]{./img/sig.png}
+\end{document}

@@ -184,7 +184,9 @@ Gabriel, R., \textbf{Wenz, C.} (2015). \emph{The Opportunities to Develop Litera
     {2013}
     
 \end{cvhonors}
+\pagebreak
 ```
+ 
 # Technical Skills
 <!-- # ``` {r skills} -->
 <!-- # skillsDetail %>% -->
@@ -198,6 +200,8 @@ Gabriel, R., \textbf{Wenz, C.} (2015). \emph{The Opportunities to Develop Litera
 \begin{minipage}[t]{.5\linewidth}
 \textsc{\textbf{Data Analysis}} \\[0.5mm]
 R, SPSS, SPSS Amos, Mplus, Atlas.ti, NVivo \\[1mm]
+\textsc{\textbf{Survey Design}} \\[0.5mm]
+Qualtrics, TypeForm, Survey Monkey \\[1mm]
 \textsc{\textbf{Learning Management Systems}}\\[0.5mm]
 Canvas, Blackboard, Storyline, Moodle\\[1mm]
 \end{minipage}

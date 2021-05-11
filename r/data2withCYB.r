@@ -92,7 +92,10 @@ sciences.",
     "Assisted master teacher in delivering civics curriculum to 8th grade students in the Boston Public Schools.",
     #Second Bullet
     "Corps Member", "City Year Boston", 2004, 2005, "Boston, MA",
-    "Engaged middle school students in service-learning projects for Young Heroes program.", 
+    "Engaged middle school students in service-learning projects as leader for Young Heroes program.",
+    #Third bullet
+    "Corps Member", "City Year Boston", 2004, 2005, "Boston, MA",
+    "Lead Mattahunt Elementary School students for SCORES after-school program."
 )
     
 #### EDUCATION SECTION #####
@@ -100,11 +103,11 @@ sciences.",
 education <- tribble(~school, ~degree, ~year, ~where,
     "University of Connecticut", "PhD, Curriculum & Instruction", "Aug 2021", "Storrs, CT", 
     "University of Connecticut", "MA, Educational Psychology", "2014", "Storrs, CT",
-    "Hampshire College", "BA, History", "2007", "Amherst, MA"
+    "Hampshire College", "BA, History & Education", "2007", "Amherst, MA"
     ) 
   
 graduate <- tribble(~school, ~degree, ~year, ~where,
-                     "Curriculum & Instruction", "PhD", "May, 2021", "Storrs, CT", 
+                     "Curriculum & Instruction", "PhD", "Aug 2021", "Storrs, CT", 
                      "Educational Psychology", "MA", "2014", "Storrs, CT"
 ) 
 undergraduate <- tribble(~school, ~degree, ~year, ~where,
@@ -116,9 +119,9 @@ undergraduate <- tribble(~school, ~degree, ~year, ~where,
 #### Detailed Education? ####
 library(tibble)
 educationDETAIL <- tribble(~school, ~city, ~degree, ~Year, 
-                      "University of Connecticut", "Storrs, CT", "PhD --- Curriculum and Instruction", "May 2021",
+                      "University of Connecticut", "Storrs, CT", "PhD --- Curriculum and Instruction", "Aug 2021",
                       "University of Connecticut", "Storrs, CT", "MA --- Educational Psychology", "2014",
-                      "Hampshire College", "Amherst, MA", "BA -- History and Cognitive Science", "2007",
+                      "Hampshire College", "Amherst, MA", "BA -- History and Education", "2007",
                       )
 
 

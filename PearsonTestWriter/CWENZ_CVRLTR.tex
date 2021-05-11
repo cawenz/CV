@@ -1,0 +1,135 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+ \definecolor{awesome}{HTML}{5b9279}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+%\photo[circle,edge,left]{./img/bwwenz.png}
+\name{Christopher}{Wenz}
+%\position{Software Architect{\enskip\cdotp\enskip}Security Expert}
+\address{456 Long Plain Road ~·~ Leverett, MA 01054}
+\mobile{860 977 1674}
+\email{cawenz@gmail.com}
+%\homepage{www.posquit0.com}
+%\github{cawenz}
+\linkedin{chris-a-wenz}
+\researchgate{chris\_wenz}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+
+%\quote{``Be the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+ {Pearson Assessments VUE}
+ {300 Venture Way\\Hadley, MA 01035}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Candidate for Test Content Developer Position ELA (2105670)}
+% How the letter is opened
+\letteropening{\\\\Dear Members of the Hiring Committee,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+%\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Chris Wenz~~~·~~~Cover Letter}
+  {Page \thepage\ of 1}
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+In addition to the five years I spent teaching high school English and History to students with learning differences, I have spent the last 6 years teaching undergraduate and graduate courses in reading and writing instruction. I believe the skills I have developed as a teacher, teacher educator and researcher align closely with the responsbilities and skills outlined in the description for this job. 
+
+Since leaving my position as Research Scientist at Landmark College in 2020, I have been teaching as an Adjunct Professor at UConn and working to complete my PhD. I have also provided full-time care for my 5 year-old son and volunteered in support of a much-needed renovation of his non-profit preschool: Willow Blossom Learning Center. In my role as Board President, I have collaborated with the Center Director and staff to upgrade the building's HVAC systems, re-design classrooms, and secure the funding needed for these projects. I have also volunteered hundreds of hours to complete the carpentry and painting necessary to create a safer and more functional space for the Program. Now that Willow Blossom has re-opened I am seeking a position that allows my family to remain in the Pioneer Valley and affords me the opportunity to apply my skills as an educator and researcher. 
+
+In August, I will complete my PhD in Curriculum and Instruction; my graduate studies have built on my classroom teaching experience and I have focused on adolescent literacy instruction, assessment and intervention. Much of my scholarly has focused on "disciplinary literacy": an approach to K-12 literacy instruction that focuses on developing students' literacies through authentic engagement in disciplinary content and practices. As a Graduate Assistant and Adjunct Professor at the UConn, I have applied these ideas to courses on literacy instruction for pre-service teacher candidates (including pre-service ELA teachers) and students in the Literacy Specialist Program. I am confident that my experience and training as an ELA teacher, teacher educator and literacy researcher has prepared me well to meet the demands of this position. 
+
+Although working for a company like Pearson would be a departure from my prior experience, I have thrived working both independently and on teams in numerous settings. Working directly with students always requires juggling multiple and competing priorities and approaching every day with flexibility and a willingness to learn; I believe the skills and competencies I've developed as an educator would serve me well in this position and make me an asset to the company and my co-workers. I would appreciate the opportunity to discuss my qualifications with you in an interview and I thank you for your consideration. 
+\\\\
+Best,
+\end{cvletter}
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+%\makeletterclosing
+
+\includegraphics[width=4cm, height=0.8cm]{./img/sig.png}
+\end{document}
