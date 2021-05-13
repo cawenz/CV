@@ -1,0 +1,134 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[10pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+ \definecolor{awesome}{HTML}{5b9279}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+%\photo[circle,edge,left]{./img/bwwenz.png}
+\name{Christopher}{Wenz}
+%\position{Software Architect{\enskip\cdotp\enskip}Security Expert}
+\address{456 Long Plain Road ~·~ Leverett, MA 01054}
+\mobile{860 977 1674}
+\email{cawenz@gmail.com}
+%\homepage{www.posquit0.com}
+%\github{cawenz}
+\linkedin{chris-a-wenz}
+\researchgate{chris\_wenz}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+
+%\quote{``Be the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+ {Lexia Learning}
+ {320 Baker Avenue Suite 320 \\Concord, MA 01742}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+%\lettertitle{Candidate for Senior Analyst, Product Research (JR103581)}
+% How the letter is opened
+\letteropening{\\\\Dear Members of the Hiring Team,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+%\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Chris Wenz~~~·~~~Cover Letter}
+  {Page \thepage\ of 1}
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+I write as an applicant for the position of \textbf{Senior Analyst, Product Research (JR103581)}. Over the past year, in addition to providing full-time care for my five-year old son, I have spent several days helping my nephew with his remote schooling. His favorite part of my days with him (besides Lunch!) was the time he spent on the Core5 app. As his uncle, I loved seeing him engage with a learning program that captivated him. As a researcher and literacy educator, I was impressd with his growth as a reader and the quality of the instruction the program delivers. As a result, I am incredibly excited by the opportunity to work on the development and refinement of Lexia products.
+
+Although I am early in my career as a literacy researcher, and I have direct experience conducting both qualitative and quantitative research, including working with large data sets. For the past 18 months I have been working under a data-sharing agreement with the Reading Recovery Council of North America (RR). In collaboration with my colleague Dr. Rachael Gabriel, I have designed and conducted a secondary analysis of seven years of assessment data on RR students from across the country (n > 350,000). The goal of this project is to use recent advances in finite mixture regression models and multi-level analysis to identify patterns of response to the Reading Recovery intervention. We hope that the insights generated by our analysis can lead to improvements not just to the differentiation of the RR intervention, but to early literacy instruction in general. To complete this project, I cleaned and matched the RR data with the school, district and state data from the National Center for Educational Statistics' Common Core of Data (CCD). In addition, the rich CCD data and newly developed R packages allowed us to generate novel measures of segregation and neighborhood poverty. These measures provide us with a deeper understanding of differences in the delivery and response to RR across the country. All of this to say: I believe that the technical and analytic skills I have developed on this and other projects would make me an asset to the Research and Analytics team at Lexia. 
+
+Finally, I believe the communication and leadership skills I developed over many years of working closely with diverse groups of students, families, and educators would allow me to succeed in this position. After several years of (somewhat) lonely work in Academia, I relish the opportunity to join a dynamic Research team and collaborate across teams and departments.  I would greatly appreciate the opportunity to learn more about Lexia, this position, and to discuss my qualifications with you in an interview. Thank you for your consideration.  
+
+\\\\
+Best,
+\end{cvletter}
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+%\makeletterclosing
+
+\includegraphics[width=4cm, height=0.8cm]{./img/sig.png}
+\end{document}
